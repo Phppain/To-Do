@@ -12,8 +12,9 @@
         <div style="border: 1px black solid; text-align: center; margin-top: 10px;">
             <h3>{{ i.topic }}</h3>
             <p>{{ i.description }}</p>
+            <a href="{% url 'editToDo' i.id %}">Edit</a>
+            <a href="{% url 'deleteToDo' i.id %}">Delete</a>
         </div>
     {% endfor %}
-
 </body>
 </html>
