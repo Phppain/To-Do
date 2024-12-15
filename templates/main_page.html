@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <a href="create">Create To Do</a>
+    {% for i in to_dos %}
+        <div style="border: 1px black solid; text-align: center; margin-top: 10px;">
+            <h3>{{ i.topic }}</h3>
+            <p>{{ i.description }}</p>
+        </div>
+    {% endfor %}
+
+</body>
+</html>
